@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images\Favicon.png" />
+    <title>Elvis Bilservice</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img src="images\Icon.png" alt="Elvis Bilservice logo" class="logo" />
+          <h1 class="navbar-logo"><a href="index.html">Elvis Bilservice</a></h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="prislista.html" class="nav-link">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <a href="om.html" class="nav-link">Om oss</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="popup-form" class="popup">
+      <div class="popup-content">
+        <h2>Boka Service</h2>
+        <form>
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="service">Önskad service:</label>
+          <select id="service" name="service" required>
+            <option value="">Välj service</option>
+            <option value="oil-change">Oljebyte</option>
+            <option value="brake-service">Bromservice</option>
+            <option value="tire-change">Däckbyte</option>
+            <option value="general-service">Allmän service</option>
+          </select>
+
+          <label for="date">Önskat datum:</label>
+          <input type="date" id="date" name="date" required>
+
+          <button type="submit" class="cta-button">Skicka bokning</button>
+        </form>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="hero">
+        <div class="hero-image left">
+          <img
+            src="images/ElvisBilservicePortfolio (9).jpg"
+            alt="Bilverkstad exteriör"
+          />
+        </div>
+        <div class="hero-content">
+          <h1>Elvis Bilservice</h1>
+          <p>Din pålitliga partner för bilservice och reparationer</p>
+          <a href="#popup-form" class="cta-button">Boka service</a>
+        </div>
+        <div class="hero-image right">
+          <img
+            src="images/ElvisBilservicePortfolio (11).jpg"
+            alt="Mekaniker i arbete"
+          />
+        </div>
+      </div>
+
+      <section class="features">
+        <div class="feature">
+          <h2>Expertis</h2>
+          <p>Våra erfarna mekaniker tar hand om alla typer av fordon</p>
+        </div>
+        <div class="feature">
+          <h2>Kvalitet</h2>
+          <p>Vi använder endast de bästa delarna och den senaste tekniken</p>
+        </div>
+        <div class="feature">
+          <h2>Kundservice</h2>
+          <p>Kundnöjdhet är vår högsta prioritet</p>
+        </div>
+      </section>
+
+      <section class="about-preview">
+        <h2>Om Elvis Bilservice</h2>
+        <p>
+          Elvis Bilservice har varit en pålitlig bilverkstad sedan 1978. Vi
+          erbjuder högkvalitativa tjänster för alla typer av fordon och strävar
+          alltid efter att överträffa dina förväntningar.
+        </p>
+        <a href="om.html" class="learn-more">Läs mer om oss</a>
+      </section>
+    </main>
+
+    <footer>
+      <p class="text-footer">
+        &copy; 2023 Elvis Bilservice. Alla rättigheter förbehållna.
+      </p>
+      <nav class="footer-nav">
+        <a href="index.html" class="footer-nav-item"
+          ><i class="fas fa-home"></i
+        ></a>
+        <a href="service.html" class="footer-nav-item"
+          ><i class="fas fa-wrench"></i
+        ></a>
+        <a href="prislista.html" class="footer-nav-item"
+          ><i class="fas fa-tag"></i
+        ></a>
+        <a href="kontakt.html" class="footer-nav-item"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="om.html" class="footer-nav-item"
+          ><i class="fas fa-info-circle"></i
+        ></a>
+      </nav>
+    </footer>
+  </body>
+</html>

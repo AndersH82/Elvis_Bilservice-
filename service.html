@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/service.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" href="images\Favicon.png" />
+    <title>Elvis Bilservice - Service</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img src="images\Icon.png" alt="Elvis Bilservice logo" class="logo" />
+          <h1 class="navbar-logo"><a href="index.html">Elvis Bilservice</a></h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Hem</a></li>
+          <li class="nav-item">
+            <a href="service.html" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="prislista.html" class="nav-link">Priser</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+          <li class="nav-item"><a href="om.html" class="nav-link">Om oss</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <main>
+      <div class="service-container">
+        <h1>Våra Tjänster</h1>
+        <p>
+          På Elvis Bilservice erbjuder vi ett brett utbud av tjänster för att
+          hålla din bil i toppskick. Här är några av våra mest populära
+          tjänster:
+        </p>
+
+        <div class="service-list">
+          <div class="service-item">
+            <h2>Oljebyte</h2>
+            <p>
+              Regelbundna oljebyten är viktiga för att hålla din motor i gott
+              skick. Vi använder högkvalitativa oljor som passar din bilmodell.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h2>Bromsbyte</h2>
+            <p>
+              Vi erbjuder bromsbyte för både fram- och bakbromsar. Säkerheten
+              kommer först, och vi ser till att dina bromsar fungerar optimalt.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h2>Däckbyte och Hjulinställning</h2>
+            <p>
+              Vi hjälper dig med säsongsbyten av däck och erbjuder även
+              hjulinställning för bättre köregenskaper och längre däcklivslängd.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h2>Årlig Service</h2>
+            <p>
+              Vår omfattande årliga service inkluderar alla nödvändiga
+              kontroller och underhåll för att hålla din bil i toppskick året
+              runt.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h2>AC-service</h2>
+            <p>
+              Vi utför service på din bils luftkonditionering för att
+              säkerställa optimal prestanda och komfort under varma dagar.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h2>Felkodsläsning</h2>
+            <p>
+              Med vår avancerade diagnosutrustning kan vi snabbt identifiera och
+              åtgärda eventuella fel i din bils elektroniska system.
+            </p>
+          </div>
+        </div>
+        <a href="#popup-form" class="cta-button">Boka service</a>
+
+        <p class="service-note">
+          För mer information om våra tjänster och priser, besök vår
+          <a href="prislista.html">prislista</a> eller
+          <a href="kontakt.html">kontakta oss</a> för en personlig offert.
+        </p>
+      </div>
+    </main>
+
+    <div id="popup-form" class="popup">
+      <div class="popup-content">
+        <h2>Boka Service</h2>
+        <form>
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="service">Önskad service:</label>
+          <select id="service" name="service" required>
+            <option value="">Välj service</option>
+            <option value="oil-change">Oljebyte</option>
+            <option value="brake-service">Bromservice</option>
+            <option value="tire-change">Däckbyte</option>
+            <option value="general-service">Allmän service</option>
+          </select>
+
+          <label for="date">Önskat datum:</label>
+          <input type="date" id="date" name="date" required>
+
+          <button type="submit" class="cta-button">Skicka bokning</button>
+        </form>
+        <a href="#" class="popup-close">&times;</a>
+      </div>
+    </div>
+
+    <footer>
+      <p class="text-footer">
+        &copy; 2023 Elvis Bilservice. Alla rättigheter förbehållna.
+      </p>
+      <nav class="footer-nav">
+        <a href="index.html" class="footer-nav-item"
+          ><i class="fas fa-home"></i
+        ></a>
+        <a href="service.html" class="footer-nav-item"
+          ><i class="fas fa-wrench"></i
+        ></a>
+        <a href="prislista.html" class="footer-nav-item"
+          ><i class="fas fa-tag"></i
+        ></a>
+        <a href="kontakt.html" class="footer-nav-item"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="om.html" class="footer-nav-item"
+          ><i class="fas fa-info-circle"></i
+        ></a>
+      </nav>
+    </footer>
+
+
+  </body>
+</html>
